@@ -10,8 +10,15 @@
 
 
 function max_end3(int_array){
-  // Add functionality here!
-  return
+  // Determine if last or first element is largest
+  let largest = int_array[int_array.length - 1];
+  largest = largest < int_array[0] ? int_array[0] 
+  : largest;
+  
+  // Change in-place
+  for(let i = 0; i < int_array.length; i++){
+    int_array[i] = largest;
+  }
 }
 
 
