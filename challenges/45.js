@@ -19,6 +19,8 @@ function max_end3(int_array){
   for(let i = 0; i < int_array.length; i++){
     int_array[i] = largest;
   }
+  
+  return int_array;
 }
 
 
